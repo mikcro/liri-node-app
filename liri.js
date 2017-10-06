@@ -1,6 +1,6 @@
 var keys = require("./keys.js");
 var Twitter = require('twitter');
-var lastFmNode = require('lastfm').LastFmNode;
+var spotifyNode = require('spotify').spotifyNode;
 var request = require('request');
 
 // TWITTER//
@@ -14,7 +14,7 @@ client.get('statuses/user_timeline', params, function (error, tweets, response) 
     }
 
     if (!error) {
-        for (var i = 0; i < tweets.length; i<20) {
+        for (var i = 0; i < tweets.length; i<21) {
             var date = tweets[i].created_at
             var texts = tweets[i].text
         }
@@ -38,7 +38,7 @@ if(process.argv[2] == 'movie-this'){
 
 
 function spotify(song) {
-var spotify = new lastFmNode(keys.spotifyKeys);
+var spotify = new spotify(keys.spotifyKeys);
     spotify.request("track.search", {
         track: song, handlers: {
             success: function (json) {

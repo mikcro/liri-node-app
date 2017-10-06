@@ -1,5 +1,5 @@
 {
-  "name": "liri-bot",
+  "name": "liri-bot-app",
   "version": "1.0.0",
   "description": "Homework #10",
   "main": "keys.js",
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/milewam12/LIRI-Bot.git"
+    "url": "git+https://github.com/mikcro/liri-node-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/milewam12/LIRI-Bot/issues"
+    "url": "https://github.com/mikcro/liri-node-app/issues"
   },
-  "homepage": "https://github.com/milewam12/LIRI-Bot#readme",
+  "homepage": "https://github.com/mikcro/liri-node-app#readme",
   "dependencies": {
-    "lastfm": "^0.9.2",
+    "spotify": "^0.9.2",
     "request": "^2.81.0",
     "twitter": "^1.7.1"
   }
