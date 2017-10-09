@@ -4,12 +4,19 @@ var spotifyNode = require('spotify').spotifyNode;
 var request = require('request');
 
 // TWITTER//
-var client = new Twitter(keys.twitterKeys);
 
+var client = new Twitter(keys.twitterKeys);
+console.log("client",client)
 var params = { screen_name: 'CroMikeDonMan' };
 client.get('statuses/user_timeline', params, function (error, tweets, response) {
+console.log("tweets",tweets)
+
+console.log("error,",error)
+
+
 
     if (error) {
+        console.log("this is our error",error)
         return console.log("liri doesn't understand that commands");
     }
 
@@ -26,7 +33,7 @@ client.get('statuses/user_timeline', params, function (error, tweets, response) 
 
 
 });
-
+console.log("enteredText",process.argv[2])
 
 if(process.argv[2] == 'movie-this'){
     movie(process.argv[3]);
@@ -34,7 +41,7 @@ if(process.argv[2] == 'movie-this'){
     musicFm(process.argv[3]);
 }
 
-// SPOTIFY//
+SPOTIFY//
 
 
 function spotify(song) {
@@ -68,7 +75,7 @@ var spotify = new spotify(keys.spotifyKeys);
     });
 }
 
-//MOVIE THIS//
+MOVIE THIS//
 
 
 function movie(movieName) {

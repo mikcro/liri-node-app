@@ -1,4 +1,4 @@
-// console.log('this is loaded');
+console.log('this is loaded');
 
 exports.twitterKeys = {
   consumer_key: '9ZGtEnvUTCdvAqVYVgRHEHMvz',
@@ -13,6 +13,6 @@ exports.lastfmKeys = {
 }
 
 exports.spotifyKeys = {
-  Client ID: '4ad15b0b8edf4a5e833bd1eedce71d1c',
-  Client Secret: 'c9d213fbdd4849eab5f619f19bfed2ca',
+  Client_ID: '4ad15b0b8edf4a5e833bd1eedce71d1c',
+  Client_Secret: 'c9d213fbdd4849eab5f619f19bfed2ca',
 }
